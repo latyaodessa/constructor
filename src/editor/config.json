@@ -1,0 +1,22 @@
+{
+  "structure": {
+    "type": "Page",
+    "styleId": "p1",
+    "id": "mua1n",
+    "components": [
+      {
+        "componentType": "FormC",
+        "style": {
+        },
+        "children": [
+
+        ],
+        "validation": {
+          "type": "object",
+          "properties": {
+          }
+        }
+      }
+    ]
+  }
+}
