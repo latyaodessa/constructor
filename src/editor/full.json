@@ -1,0 +1,103 @@
+{
+  "structure": {
+    "type": "Page",
+    "styleId": "p1",
+    "id": "mua1n",
+    "components": [
+      {
+        "componentType": "FormC",
+        "style": {
+          "padding": "10px",
+          "backgroundColor": "#f1f1f1",
+          "boxShadow": "0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)"
+        },
+        "children": [
+          {
+            "componentType": "Label",
+            "config": {
+              "text": "Party Form",
+              "component": "h1",
+              "variant": "h4"
+            },
+            "layout": {}
+          },
+          {
+            "componentType": "InputField",
+            "config": {
+              "variant": "outlined",
+              "margin": "normal",
+              "required": true,
+              "fullWidth": true,
+              "id": "partyName",
+              "label": "Party Name",
+              "name": "partyName",
+              "autoComplete": "partyName",
+              "autoFocus": true
+            },
+            "style": {
+            }
+          },
+          {
+            "componentType": "InputField",
+            "config": {
+              "variant": "outlined",
+              "margin": "normal",
+              "required": true,
+              "fullWidth": true,
+              "id": "street",
+              "label": "Street",
+              "name": "street",
+              "autoComplete": "street",
+              "autoFocus": true
+            },
+            "style": {}
+          },
+          {
+            "componentType": "InputField",
+            "config": {
+              "variant": "outlined",
+              "margin": "normal",
+              "required": true,
+              "fullWidth": true,
+              "id": "phone",
+              "label": "Phone number",
+              "name": "phone",
+              "autoComplete": "phone",
+              "autoFocus": true
+            },
+            "style": {}
+          },
+          {
+            "componentType": "ActionButton",
+            "config": {
+              "type": "submit",
+              "fullWidth": true,
+              "variant": "contained",
+              "color": "primary",
+              "text": "submit"
+            },
+            "style": {
+            }
+          }
+        ],
+        "validation": {
+          "type": "object",
+          "properties": {
+            "partyName": {
+              "type": "string",
+              "max": 5
+            },
+            "street": {
+              "type": "string",
+              "max": 10
+            },
+            "phone": {
+              "type": "number",
+              "min": 10
+            }
+          }
+        }
+      }
+    ]
+  }
+}
